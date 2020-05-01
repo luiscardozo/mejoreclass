@@ -1,0 +1,36 @@
+{
+    "name": "Mejor eClass",
+    "version": "1.0",
+    "description": "Mejoras en eClass",
+    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/logoU16.png",
+            "32": "images/logoU32.png",
+            "48": "images/logoU48.png",
+            "128": "images/logoU128.png"
+          }
+    },
+    "options_page": "options.html",
+    "icons": {
+        "16": "images/logoU16.png",
+        "32": "images/logoU32.png",
+        "48": "images/logoU48.png",
+        "128": "images/logoU128.png"
+      },
+      "content_scripts": [
+        {
+            "matches": [
+              "https://eclass2.unida.edu.py/infou/profesor/asistencia2.asp?ccarrera=*&c=*&b=*&fecha=*"
+            ],
+            "all_frames": true,
+            "js": ["asistencia.js"]
+        }
+      ],
+    "manifest_version": 2
+}
