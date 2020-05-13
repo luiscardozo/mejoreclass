@@ -26,10 +26,11 @@
       "content_scripts": [
         {
             "matches": [
-              "https://eclass2.unida.edu.py/infou/profesor/asistencia2.asp?ccarrera=*&c=*&b=*&fecha=*"
+              "https://eclass2.unida.edu.py/infou/profesor/asistencia2.asp?ccarrera=*&c=*&b=*&fecha=*",
+              "https://eclass2.unida.edu.py/infou/alumno/materialh.asp?c=*&b=*&pag=*&f=*"
             ],
             "all_frames": true,
-            "js": ["asistencia.js"]
+            "js": ["hidecolumns.js"]
         }
       ],
     "manifest_version": 2
