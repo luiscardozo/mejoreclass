@@ -27,6 +27,7 @@
         {
             "matches": [
               "https://eclass2.unida.edu.py/infou/profesor/asistencia2.asp?ccarrera=*&c=*&b=*&fecha=*",
+              "https://eclass.unida.edu.py/infou/profesor/asistencia2.asp?ccarrera=*&c=*&b=*&fecha=*",
               "https://eclass2.unida.edu.py/infou/alumno/materialh.asp?c=*&b=*&pag=*&f=*",
               "https://eclass.unida.edu.py/infou/alumno/materialh.asp?c=*&b=*&pag=*&f=*"
             ],
